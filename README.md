@@ -1,0 +1,1 @@
+# segmentify-ios-sdk-spm
