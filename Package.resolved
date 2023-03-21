@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "storyly-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Netvent/storyly-ios.git",
+      "state" : {
+        "revision" : "9bb54c440f81ba441d9610b4b013ed2f16cd5044",
+        "version" : "1.31.4"
+      }
+    },
+    {
+      "identity" : "swift-atomics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-atomics.git",
+      "state" : {
+        "revision" : "ff3d2212b6b093db7f177d0855adbc4ef9c5f036",
+        "version" : "1.0.3"
+      }
+    }
+  ],
+  "version" : 2
+}
