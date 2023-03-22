@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "segmentify",
+    platforms: [.iOS(.v11)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -17,10 +18,7 @@ let package = Package(
         .package(
               url: "https://github.com/apple/swift-atomics.git",
               .upToNextMajor(from: "1.0.0"))// or `.upToNextMinor
-        ,
-        .package(
-                  url: "https://github.com/Netvent/storyly-ios.git",
-                  .upToNextMajor(from: "1.0.0"))// or `.upToNextMinor
+        
         
        
     ],
@@ -29,7 +27,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "segmentify",
-            dependencies: [.product(name: "Atomics", package: "swift-atomics"),.product(name: "Storyly", package: "storyly-ios")],
+            dependencies: [.product(name: "Atomics", package: "swift-atomics")],
             path: "Sources"),
         .testTarget(
             name: "segmentifyTests",
